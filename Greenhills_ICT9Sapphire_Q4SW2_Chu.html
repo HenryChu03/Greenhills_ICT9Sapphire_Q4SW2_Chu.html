@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SW2 Day Conversion</title>
+</head>
+<body><br><br>
+	<center><h1>Time Converter</h1>
+	<tr>
+		<center>Convert Days to ____
+			<center><p><input type="text" id="days"></p>
+			<input type="button" class="btn btn-primary" onClick="DtSec()" value="Day To Seconds">
+			<input type="button" class="btn btn-primary" onClick="DtMin()" value="Day To Minutes">
+			<input type="button" class="btn btn-primary" onClick="DtHr()" value="Day To Hours">
+		</th>
+	</tr>
+</table>
+</body>
+<script>
+function DtSec(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 86400;		
+		alert(x * y);
+	}
+	function DtMin(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 1440;		
+		alert(x * y);
+	}
+	function DtHr(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 24;		
+		alert(x * y);
+	}
+</script>
+</html>
